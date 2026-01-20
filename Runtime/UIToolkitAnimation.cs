@@ -99,7 +99,7 @@ namespace UnityEssentials
             if (!HasElements)
                 return;
 
-            var transitionUSS = ResourceLoader.TryGet<StyleSheet>("UnityEssentials_USS_Transition");
+            var transitionUSS = AssetResolver.TryGet<StyleSheet>("UnityEssentials_USS_Transition");
             Document.AddStyleSheet(transitionUSS);
 
             Play();
